@@ -1,0 +1,81 @@
+/* RESET SIMPLE */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  display: flex; /* Habilitamos flexbox */
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  align-items: center; /* Centrados verticalmente */
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px; /* espacio entre links */
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- SECCIÓN ARTÍCULOS ---------- */
+.articulos {
+  display: flex;
+  flex-wrap: wrap; /* Los artículos pueden saltar de línea */
+  justify-content: space-around; /* Espacio uniforme entre ellos */
+  gap: 15px;
+  padding: 20px;
+}
+.articulos article {
+  background: #4a90e2;
+  color: white;
+  flex: 1 1 200px; /* Crecen, encogen, mínimo 200px */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* ---------- SECCIÓN CAJAS ---------- */
+.cajas {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  gap: 20px;
+  height: 200px;
+  background: #ddd;
+  margin: 20px;
+}
+.box {
+  background: #50e3c2;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Elementos a los extremos */
+  align-items: center;
+  padding: 15px 20px;
+  background: #222;
+  color: white;
+}
+.footer .social {
+  display: flex;
+  gap: 10px;
+}
+.footer a {
+  color: #50e3c2;
+  text-decoration: none;
+}
