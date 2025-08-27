@@ -37,7 +37,9 @@ body {
 .articulos article {
   background: #4a90e2;
   color: white;
-  flex: 1 1 200px; /* Crecen, encogen, mínimo 200px */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
@@ -45,11 +47,12 @@ body {
 
 /* ---------- SECCIÓN CAJAS ---------- */
 .cajas {
+  /* Centrado vertical */
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;     /* Centrado vertical */
+  justify-content: flex-start;
+  align-items: center;
   gap: 20px;
-  height: 200px;
+  height: 400px;
   background: #ddd;
   margin: 20px;
 }
@@ -64,8 +67,9 @@ body {
 
 /* ---------- FOOTER ---------- */
 .footer {
+  margin-top: 10vh;
   display: flex;
-  justify-content: space-between; /* Elementos a los extremos */
+  justify-content: space-around; /* Elementos a los extremos */
   align-items: center;
   padding: 15px 20px;
   background: #222;

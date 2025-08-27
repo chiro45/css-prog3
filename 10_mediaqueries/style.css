@@ -4,7 +4,6 @@
 }
 
 :root {
-  --bg-band: 70%; /* ancho de la banda de fondo (desktop) */
   --bg-band-color: #f3f5ff;
   --bg-base-color: #ffffff;
   --text: #1f2937;
@@ -28,7 +27,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.25rem;
-  
 }
 
 .site-header,
@@ -97,12 +95,18 @@ body {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  .card {
+    background-color: #225e1c;
+  }
 }
 
 /* Tablet vertical: 2 columnas, banda 50% */
 @media (min-width: 600px) and (max-width: 899px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    background-color: #d16262;
   }
 }
 
