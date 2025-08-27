@@ -37,10 +37,8 @@ h1 {
   height: 100%;
   color: white;
   font-size: 20px;
+  text-align: center;
   font-weight: bold;
-  display: flex; /* para centrar el número dentro */
-  align-items: center;
-  justify-content: center;
   border-radius: 8px;
 }
 
@@ -50,12 +48,10 @@ h1 {
 .div-1 {
   grid-row-start: 1;
   grid-row-end: 3; /* desde la fila 1 hasta la 3 → ocupa 2 filas */
-  background: #50e3c2;
 }
 
 /* div-2 ocupa dos columnas de ancho */
 .div-2 {
   grid-column-start: 2;
   grid-column-end: 4; /* desde columna 2 hasta la 4 → ocupa 2 columnas */
-  background: #f5a623;
 }
